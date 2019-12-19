@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Лабораторная 27</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+	#img{
+		background-image:url(fon.jpg);
+	}
+	progress {
+      width: 5%;
+    }
+  </style>
+</head>
+<body id="img"><center>
+    <p><a href="index1.html" onclick="s1()">Нажмите для перехода на страницу с заданиями. </a></p>
+    <div onmouseover="myOverFunction()">
+        <p>Кол-во "наведений": <br> <span id="demo">Водите мышкой по полю.</span></p>
+        </div>
+            <script>
+                var x = 0;
+                var y = 0;
+                var z = 0;      
+                function myOverFunction() {
+                document.getElementById("demo").innerHTML = y+=1;
+                }
+            </script> <br>
+    <p>Смена картинки при нажатии на нее</p>    
+    <img id="img1" src="pic1.jpg" onclick="s2()">
+</center></body>
+<script src="script.js"></script>
+</html>

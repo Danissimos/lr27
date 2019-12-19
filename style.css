@@ -1,0 +1,16 @@
+body{
+    background-image: url(fon.jpg);
+}
+P{
+    font-size: 24px;
+    font-family: cursive;
+}
+div {
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 5px;
+    background-color: lightgray;
+  }
+

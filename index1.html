@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Задание 1</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+	#img{
+		background-image:url(fon.jpg);
+	}
+	progress {
+      width: 5%;
+    }
+  </style>
+</head>
+<body id="img"><center>
+    <p>Наведите мышку для смены картинки</p>
+    <img src="pic1.jpg" name="pic1" onmouseover="this.src='pic2.jpg';" onmouseout="this.src='pic1.jpg';"><br>
+    <p>Наведите мышку для увеличения картинки</p>
+    <img src="pic3.jpg" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+    <script>
+        function bigImg(x) {
+            x.style.height = "480px";
+            x.style.width = "648px";
+        }
+        function normalImg(x) {
+            x.style.height = "240px";
+            x.style.width = "320px";
+        }
+        </script><br><br><br><br>
+</center></body>
+<script src="script.js"></script>
+</html>
